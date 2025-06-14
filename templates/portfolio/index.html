@@ -1,0 +1,28 @@
+{% extends 'partials/_base.html' %}
+{% block title %}Início | Meu Portfólio{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="h-[calc(100vh-5rem)] flex flex-col justify-between px-80 pb-32 bg-gray-900">
+    <!-- Presentation -->
+    <div class="size-full flex justify-center items-center">
+      <div class="w-3/6 flex flex-col">
+        <h1 class="flex justify-start text-5xl font-bold text-teal-400">Anthony Ueta Vecchia</h1>
+        <h2 class="flex justify-end text-4xl text-gray-300 mt-2">Desenvolvedor Python</h2>
+      </div>
+    </div>
+    <!-- Technologies -->
+    <div class="flex flex-col justify-between items-left">
+      <h3 class="text-2xl font-semibold text-teal-300 mb-4">Tecnologias que utilizo</h3>
+      <ul class="flex flex-wrap gap-4 text-gray-300">
+        <li class="bg-gray-800 px-3 py-1 rounded">Python</li>
+        <li class="bg-gray-800 px-3 py-1 rounded">Django</li>
+        <li class="bg-gray-800 px-3 py-1 rounded">Django REST</li>
+        <li class="bg-gray-800 px-3 py-1 rounded">SQL</li>
+        <li class="bg-gray-800 px-3 py-1 rounded">HTML/CSS</li>
+        <li class="bg-gray-800 px-3 py-1 rounded">Tailwind</li>
+      </ul>
+    </div>
+  </section>
+
+{% endblock %}
