@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>{% block title %}My Portfolio{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS(Animate On Scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white font-sans scroll-smooth">
 
@@ -26,6 +29,14 @@
     <footer class="text-center py-4 text-sm text-gray-400">
         © {{ now.year }} Anthony Ueta Vecchia. All rights reserved.
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+    </script>
 
 </body>
 </html>

@@ -1,34 +1,38 @@
 {% extends 'partials/_base.html' %}
-{% block title %}Início | Meu Portfólio{% endblock %}
+{% block title %}Home | My Portfolio{% endblock %}
 
 {% block content %}
   <!-- Hero Section -->
   <section class="h-[calc(100vh-5rem)] flex flex-col justify-between px-4 md:px-32 xl:px-64 pb-32 bg-gray-900">
     <div class="container mx-auto max-w-screen-xl px-4 md:px-8 flex flex-col justify-between h-full py-16">
       <!-- Presentation -->
-      <div class="size-full flex justify-center items-center">
+      <div class="size-full flex justify-center items-center" data-aos="fade-down">
         <div>
-          <h1 class="text-start text-5xl font-bold text-teal-400 md:pr-16 text-wrap balance">Anthony Ueta Vecchia</h1>
-          <h2 class="text-end text-4xl text-gray-300 mt-2 text-wrap balance">Python Developer</h2>
+          <h1 class="text-start text-5xl font-bold text-teal-400 md:pr-16 text-wrap balance">
+            Anthony Ueta Vecchia
+          </h1>
+          <h2 class="text-end text-4xl text-gray-300 mt-2 text-wrap balance" data-aos="fade-left" data-aos-delay="300">
+            Python Developer
+          </h2>
         </div>
       </div>
       <!-- Technologies -->
-      <div class="mt-12">
+      <div class="mt-12" data-aos="fade-up">
         <h3 class="text-2xl font-semibold text-teal-300 mb-4">Technologies that I use</h3>
         <ul class="flex flex-wrap gap-4 text-gray-300">
-          <li class="bg-gray-800 px-3 py-1 rounded">Python</li>
-          <li class="bg-gray-800 px-3 py-1 rounded">Django</li>
-          <li class="bg-gray-800 px-3 py-1 rounded">Django REST</li>
-          <li class="bg-gray-800 px-3 py-1 rounded">SQL</li>
-          <li class="bg-gray-800 px-3 py-1 rounded">HTML/CSS</li>
-          <li class="bg-gray-800 px-3 py-1 rounded">Tailwind</li>
+          <li class="bg-gray-800 px-3 py-1 rounded" data-aos="zoom-in" data-aos-delay="100">Python</li>
+          <li class="bg-gray-800 px-3 py-1 rounded" data-aos="zoom-in" data-aos-delay="200">Django</li>
+          <li class="bg-gray-800 px-3 py-1 rounded" data-aos="zoom-in" data-aos-delay="300">Django REST</li>
+          <li class="bg-gray-800 px-3 py-1 rounded" data-aos="zoom-in" data-aos-delay="400">SQL</li>
+          <li class="bg-gray-800 px-3 py-1 rounded" data-aos="zoom-in" data-aos-delay="500">HTML/CSS</li>
+          <li class="bg-gray-800 px-3 py-1 rounded" data-aos="zoom-in" data-aos-delay="600">Tailwind</li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- About Me -->
-  <section id="about-me" class="py-16 px-4 sm:px-8 md:px-16 lg:px-32 bg-gray-900">
+  <section id="about-me" class="scroll-mt-20 py-16 px-4 sm:px-8 md:px-16 lg:px-32 bg-gray-900" data-aos="fade-right">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-2xl sm:text-3xl font-bold text-teal-400 mb-6">About me</h2>
       <p class="text-gray-300 text-base sm:text-lg leading-relaxed">
@@ -40,7 +44,7 @@
   </section>
 
   <!-- Featured Projects -->
-  <section id="projects" class="py-16 px-4 sm:px-8 md:px-16 lg:px-32 bg-gray-900">
+  <section id="projects" class="scroll-mt-20 py-16 px-4 sm:px-8 md:px-16 lg:px-32 bg-gray-900" data-aos="fade-up">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-2xl sm:text-3xl font-bold text-teal-400 mb-6">Featured Projects</h2>
       <p class="text-gray-400 text-base sm:text-lg mb-10">
